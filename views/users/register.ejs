@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <title>Blog</title>
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">
+                <img src="https://res.cloudinary.com/dx2uakpv5/image/upload/v1665619881/logo_y5mds1.png" width="200"
+                    height="150" alt="logo-blog">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link active" href="/">Main</a>
+                    <a class="nav-item nav-link" href="/user/all">Lista de usuarios</a>
+                    <a class="nav-item nav-link" href="/user/register">Registrarse</a>
+                    <a class="nav-item nav-link" href="/user/login">Ingresar</a>
+                </div>
+            </div>
+        </nav>
+
+        <form action="/user" method="POST">
+            <%- include('_registerForm.ejs') %>
+        </form>
+    </div>
+</body>
+
+</html>

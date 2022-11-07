@@ -1,0 +1,27 @@
+<div class="mb-3">
+    <label for="username" class="form-label">Usuario</label>
+    <input required type="text"  value="<%=user.username%> " class="form-control" id="username" name="username">
+</div>
+<br>
+
+<div class="mb-3">
+    <label for="email" class="form-label">E-Mail</label>
+    <input required type="text" value="<%=user.email%>" class="form-control" id="email" name="email">
+</div>
+<br>
+
+<div class="mb-3">
+    <label for="password" class="form-label">Contraseña</label>
+    <input required type="password" value="<%=user.password%>" class="form-control" id="password" name="password">
+</div>
+<br>
+
+<a href='/' class="btn btn-outline-danger">
+    <i class="bi bi-x-circle-fill"></i>
+    Cancelar
+</a>
+
+<button type="submit" class="btn btn-primary">
+    <i class="bi bi-vector-pen"></i>
+    Registrarse
+</button>
